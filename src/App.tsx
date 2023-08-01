@@ -4,13 +4,11 @@ import ReviewReactive from './components/ReviewReactive.vue';
 
 export default defineComponent({
   setup() {
-    console.log(1);
     const s = new Map();
     const mapRef = reactive(s);
 
     mapRef.set('name', 'jack');
 
-    console.log('s====>', s.get('name'));
     onUpdated(() => {
       console.log('parent updated');
     });
