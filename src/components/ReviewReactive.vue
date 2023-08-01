@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { reactive, watch } from 'vue';
 const person = reactive({ name: 'jack' });
+
+watch(
+  () => person.name,
+  (name) => {
+    console.log('name :>> ', name);
+  }
+);
 </script>
 
 <template>
