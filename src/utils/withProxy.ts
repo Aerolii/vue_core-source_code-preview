@@ -18,7 +18,7 @@ export const createObjProxy = <T extends object>(obj: T) => {
 };
 
 // 创建map set 代理
-function isObject(val: unknown): val is Record<any, any> {
+export function isObject(val: unknown): val is Record<any, any> {
   return val !== null && typeof val === 'object';
 }
 

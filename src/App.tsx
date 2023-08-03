@@ -6,7 +6,10 @@ export default defineComponent({
   setup() {
     console.log(1);
     const s = new Map();
+    s.set('name', 'smith');
     const mapRef = reactive(s);
+
+    mapRef.get('name');
 
     mapRef.set('name', 'jack');
 
