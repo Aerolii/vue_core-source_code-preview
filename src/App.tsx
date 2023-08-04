@@ -1,6 +1,7 @@
 import { defineComponent, onUpdated, reactive } from 'vue';
 
 import ReviewReactive from './components/ReviewReactive.vue';
+const printA = '1';
 
 export default defineComponent({
   setup() {
@@ -9,8 +10,6 @@ export default defineComponent({
     const mapRef = reactive(s);
 
     mapRef.set('name', 'jack');
-
-    const printA = '1';
 
     console.log('s====>', s.get('name'));
     onUpdated(() => {
