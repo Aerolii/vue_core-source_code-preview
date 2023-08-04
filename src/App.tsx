@@ -10,6 +10,8 @@ export default defineComponent({
 
     mapRef.set('name', 'jack');
 
+    const printA = '1';
+
     console.log('s====>', s.get('name'));
     onUpdated(() => {
       console.log('parent updated');
